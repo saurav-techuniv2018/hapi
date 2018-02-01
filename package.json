@@ -11,10 +11,11 @@
     "coverage": "jest --coverage"
   },
   "dependencies": {
+    "h2o2": "6",
+    "handlebars": "4.0.11",
     "hapi": "16",
     "inert": "4",
-    "vision": "4.1.1",
-    "handlebars": "4.0.11"
+    "vision": "4.1.1"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
