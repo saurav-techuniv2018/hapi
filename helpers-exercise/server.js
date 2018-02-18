@@ -13,14 +13,14 @@ server.register(vision, (error) => {
   if (error) throw error;
 });
 
-server.path(__dirname);
+// server.path(__dirname);
 
 server.views({
   engines: {
     html: handlebars,
   },
-  path: 'templates',
-  helpersPath: 'helpers',
+  path: 'helpers-exercise/templates',
+  helpersPath: 'helpers-exercise/helpers',
 });
 
 server.route({
@@ -29,6 +29,9 @@ server.route({
   handler: (request, response) => {
     response.view('index', request.query);
   },
+  // handler: {
+  //   view: 'index',
+  // },
 });
 
 

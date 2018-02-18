@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "course": "makemehapi",
-    "test": "jest --verbose",
+    "test": "jest",
     "coverage": "jest --coverage"
   },
   "dependencies": {
@@ -15,6 +15,8 @@
     "handlebars": "4.0.11",
     "hapi": "16",
     "inert": "4",
+    "joi": "^13.1.1",
+    "rot13-transform": "^1.0.0",
     "vision": "4.1.1"
   },
   "devDependencies": {

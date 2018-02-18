@@ -6,7 +6,7 @@ describe('server', () => {
     test('when parameter name \'views\' is passed', (done) => {
       const name = 'Hapi';
       const suffix = '!!';
-      const expectedHtmlString = `<html>\n    <head><title>Hello ${name}${suffix}</title></head>\n    <body>\n        Hello ${name}${suffix}\n    </body>\n</html>`;
+      const expectedHtmlString = `<html>\n    <head><title>Hello ${name}${suffix}</title></head>\n    <body>\n        Hello ${name}${suffix}\n    </body>\n</html>\n`;
 
       runner(server.listener)
         .get(`/?name=${name}&suffix=${suffix}`)

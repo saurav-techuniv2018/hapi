@@ -1,6 +1,5 @@
 const fs = require('fs');
 const hapi = require('hapi');
-const path = require('path');
 const rot13 = require('rot13-transform');
 
 const server = new hapi.Server();
@@ -10,7 +9,7 @@ server.connection({
   port: process.argv[2] || 8080,
 });
 
-const inputFile = path.join(__dirname, 'wwwroot', 'input.txt');
+const inputFile = 'stream/wwwroot/input.txt';
 
 server.route({
   path: '/',
